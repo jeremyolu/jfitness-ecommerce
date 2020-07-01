@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1023,
+        "title": "Nike Valtec Sports Bra",
+        "description": "Nike Valtec sports bra summer edition with v line straps for extra comfortability",
+        "image": "sports-bra.jpg",
+        "quantity": 1,
+        "price": 11.99
+    },
+    {
+        "id": 1038,
+        "title": "V Power Protein Shake",
+        "description": "VPower chocolate protein shake for increased strength and mass",
+        "image": "protein-shake.jpg",
+        "quantity": 1,
+        "price": 20.00
+    },
+    {
+        "id": 1042,
+        "title": "Reebok Classics White",
+        "description": "White Rebook classics ",
+        "image": "reebok-classics.jpg",
+        "quantity": 1,
+        "price": 11.99
+    },
+    {
+        "id": 1055,
+        "title": "Clantel Free Weights",
+        "description": "Clantel free weights 5-10kg",
+        "image": "free-weights.jpg",
+        "quantity": 1,
+        "price": 30.00
+    },
+    {
+        "id": 1074,
+        "title": "Adidas Sports Tights",
+        "description": "Adidas tight fit sports gym tights",
+        "image": "adidas-sports-tights.jpg",
+        "quantity": 1,
+        "price": 18.99
+    },
+    {
+        "id": 1080,
+        "title": "Nike Pro Trainers",
+        "description": "Nike pro trainers 2020 edition",
+        "image": "nike-trainers.jpg",
+        "quantity": 1,
+        "price": 49.99
+    }
+]

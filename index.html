@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JFitness Official UK</title>
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&family=Teko:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main-style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/"><div class="nav-logo">J<span class="highlight">FIT</span>NESS</div></a>
+            <div id="nav-items" class="nav-items">
+                <i id="close" class="fa fa-times"></i>
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="#">MEN</a></li>
+                    <li class="nav-link"><a href="#">WOMEN</a></li>
+                    <li class="nav-link"><a href="#">COLLECTIONS</a></li>
+                    <li class="nav-link"><a href="#">SALE</a></li>
+                    <li class="nav-link"><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li id="basket" class="nav-link"><a href="#"><i class="fa fa-shopping-cart"><span class="basket-count-nav"></span></i></a></li>
+                    <li class="nav-link nav-button"><a href="#">SIGN UP</a></li>
+                </ul>
+            </div>
+            <i id="open" class="fa fa-bars"></i>
+        </nav>
+        <div id="shopping-basket-container">
+            <i id="basket-close" class="fa fa-times desktop-close"></i>
+            <h1>Basket Items <span class="basket-count-basket"></span></h1>
+            <div class="basket-items">
+               
+            </div>
+            <p id="price-label"></p>
+            <button>Checkout</button>
+        </div>
+        <div class="notification-bar">
+            <small>ENTER JEZZA100 PROMO CODE AT CHECKOUT FOR £10 OFF ON ORDERS OVER £50</small>
+        </div>
+        <div class="header-content">
+            <h1>NO MORE EXCUSES!</h1>
+            <h2>UP TO <span class="highlight">50% OFF</span> ON SELECTED ITEMS</h2>
+            <h3>IT'S GO TIME, SHOP NOW & <span class="highlight">GET FIT!</span></h2>
+            <button type="button">SHOP NOW <i class="fa fa-long-arrow-right"></i></button>
+        </div>
+    </header>
+
+    <section id="gender-section" class="section">
+        <div id="men-container" class="section-content">
+            <h1>SHOP MEN</h1>
+        </div>
+        <div id="women-container" class="section-content">
+            <h1>SHOP WOMEN</h1>
+        </div>
+        <div id="sale-container" class="section-content">
+            <h1>SHOP SALE</h1>
+        </div>
+    </section>
+
+    <section id="collections-section" class="section">
+        <div id="accessories-collection" class="section-content">
+            <h1>ACCESSORIES</h1>
+        </div>
+        <div id="trainers-collection" class="section-content">
+            <h1>TRAINERS</h1>
+        </div>
+        <div id="joggers-collection" class="section-content">
+            <h1>JOGGERS</h1>
+        </div>
+        <div id="supplements-collection" class="section-content">
+            <h1>SUPPLEMENTS</h1>
+        </div>
+        <div id="bras-collection" class="section-content">
+            <h1>BRAS</h1>
+        </div>
+        <div id="tights-collection" class="section-content">
+            <h1>TIGHTS</h1>
+        </div>
+    </section>
+
+    <section id="products-section" class="section">
+        <h1>TOP PRODUCTS</h1>
+        <div class="product-items"></div>
+    </section>
+
+    <section id="newsletter-section" class="section">
+        <div class="newsletter-form-container">
+            <h1>NEWSLETTER</h1>
+            <p> enter your email address so we can inform you about the latest products, services and offers</p>
+            <form>
+                <input type="text" class="input-field" placeholder="email @"/>
+                <input type="submit" class="input-button" value="sign up">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links-section">
+                <div class="footer-link-col">
+                    <h3>JFITNESS</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">ABOUT US</a></li>
+                        <li class="footer-link"><a href="#">APP</a></li>
+                        <li class="footer-link"><a href="#">CAREERS</a></li>
+                        <li class="footer-link"><a href="#">SOCIAL</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link-col">
+                    <h3>PRODUCTS</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">ACCESSORIES</a></li>
+                        <li class="footer-link"><a href="#">SUPPLEMENTS</a></li>
+                        <li class="footer-link"><a href="#">TRAINERS</a></li>
+                        <li class="footer-link"><a href="#">BRAS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link-col">
+                    <h3>CUSTOMER SERVICES</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">CONTACT US</a></li>
+                        <li class="footer-link"><a href="#">REFUNDS & RETURNS</a></li>
+                        <li class="footer-link"><a href="#">DELIVERIES</a></li>
+                        <li class="footer-link"><a href="#">GIFT CARDS</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border"></div>
+            <p>Designed by <a href="https://jeremyolu.com">JO</a></p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/basket.js"></script>
+</body>
+</html>

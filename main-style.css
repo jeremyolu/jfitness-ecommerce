@@ -1,0 +1,567 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Squada One', cursive;
+}
+
+/*MAIN*/
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.highlight {
+    color: yellow;
+}
+
+button {
+    background-color: yellow;
+    font-family: 'Squada One', cursive;
+    font-size: 20px;
+    color: #000000;
+    border: 0;
+    outline: none;
+    width: 130px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background: none;
+    color: yellow;
+    transition: 1s;
+}
+
+.input-field {
+    background: none;
+    font-family: 'Squada One', cursive;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border: 0;
+    border-bottom: 2px solid yellow;
+    outline: none;
+    padding: 10px;
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.input-field::placeholder {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.input-button {
+    background-color: yellow;
+    font-family: 'Squada One', cursive;
+    font-size: 20px;
+    color: #000000;
+    border: 0;
+    outline: none;
+    width: 130px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.border {
+    background-color: yellow;
+    width: 200px;
+    height: 2px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/*NAV*/
+
+nav {
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-logo {
+    font-size: 25px;
+    letter-spacing: 3px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+nav ul.nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav li.nav-link {
+    font-size: 20px;
+    padding: 20px 20px;
+    text-transform: uppercase;
+}
+
+nav li.nav-link a {
+    color: #FFFFFF;
+}
+
+nav li.nav-link a:hover {
+    color: yellow;
+}
+
+.nav-button a {
+    background: yellow;
+    padding: 10px 10px;
+    color: black !important;
+}
+
+.fa-bars {
+    display: none;
+    cursor: pointer;
+}
+
+.fa-times {
+    display: none;
+    cursor: pointer;
+}
+
+.desktop-close{
+    display: block;
+    cursor: pointer;
+}
+
+/*HEADER*/
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/hero-image.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #FFFFFF;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+header .header-content {
+    font-family: 'Teko', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+header .header-content h1 {
+    font-size: 80px;
+    color: yellow;
+}
+
+header .header-content h2 {
+    font-size: 50px;
+}
+
+header .header-content h3 {
+    font-size: 30px;
+}
+
+.notification-bar {
+    background-color: yellow;
+    width: 100%;
+    font-size: 23px;
+    color: #000000;
+    padding: 5px 0;
+    text-align: center;
+}
+
+/*SHOPPING BASKET*/
+
+#shopping-basket-container {
+    background: black;
+    position: relative;
+    font-family: 'Teko', sans-serif;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #FFFFFF;
+    padding: 20px;
+    height: 100%;
+    width: 300px;
+    text-align: center;
+    display: none;
+}
+
+.basket-count-nav {
+    font-family: 'Squada One', cursive;
+}
+
+#basket-close {
+    position: absolute;
+    font-size: 30px;
+    top: 2px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#basket-close:hover {
+    color: yellow;
+    transition: .2s;
+}
+
+.basket-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 750px;
+    overflow: auto;
+}
+
+.product {
+    margin-bottom: 30px;
+}
+
+.product-img {
+    height: 100px;
+    width: 100px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.quan-btn {
+    width: 30px;
+}
+
+.quan-input {
+    display: inline;
+    font-size: 20px;
+    color: yellow;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.remove-btn{
+    display: block;
+    padding: 2px;
+}
+
+#price-label {
+    font-size: 28px;
+    color: yellow;
+    text-decoration: underline;
+}
+
+/*SECTIONS*/
+
+.section {
+    font-family: 'Teko', sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+#gender-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.section-content:hover {
+    color: yellow;
+    transition: 2s;
+}
+
+.section-content h1 {
+    font-size: 40px;
+}
+
+#men-container {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/men.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#women-container {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/women.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#sale-container {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/sale.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+#collections-section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+}
+
+#accessories-collection {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/accessories.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#trainers-collection {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/trainers.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#joggers-collection {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/joggers.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#supplements-collection {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/supplements.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#bras-collection {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/bras.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#tights-collection {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/tights.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#newsletter-section {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/supplements.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.newsletter-form-container {
+    text-align: center;
+    padding: 30px;
+}
+
+.newsletter-form-container h1 {
+    font-size: 40px;
+}
+
+.newsletter-form-container p {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+#products-section {
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+#products-section h1 {
+    font-size: 40px;
+}
+
+.product-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.product-item {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.add-btn {
+    background-color: #000000;
+    color: yellow;
+}
+
+.add-btn:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-links-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer ul.footer-links {
+    list-style: none;
+}
+
+footer li.footer-link {
+    padding: 5px 0;
+}
+
+footer li.footer-link a {
+    display: block;
+    color: #FFFFFF;
+}
+
+footer h3 {
+    color: yellow;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: yellow;
+}
+
+footer a:hover {
+    color: yellow !important;
+    transition: 1s;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1280px) {
+
+    #collections-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .fa-times {
+        display: block;
+        color: #FFFFFF;
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        font-size: 23px;
+    }
+
+    .fa-bars {
+        position: absolute;
+        display: block;
+        font-size: 25px;
+        top: 10px;
+        right: 10px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    .fa-times:hover, .fa-bars:hover {
+        color: yellow;
+        transition: .2s;
+    }
+
+    .nav-items {
+        background: #000000;
+        position: absolute;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        height: 100vh;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+
+    nav ul.nav-links {
+        flex-direction: column;
+    }
+
+    #gender-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #collections-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .input-field {
+        width: 100%;
+    }
+
+    .footer-links-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #shopping-basket-container {
+        position: unset;
+        width: unset;
+    }
+
+    #basket-close {
+        top: 35px;
+        right: 10px;
+    }
+
+    .header-content h1 {
+        font-size: 53px !important;
+    }
+
+    .header-content h2 {
+        font-size: 28px !important;
+    }
+
+    .header-content h3 {
+        font-size: 23px !important;
+    }
+
+    #collections-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .header-content h1 {
+        font-size: 45px !important;
+    }
+
+    .header-content h2 {
+        font-size: 25px !important;
+    }
+
+    .header-content h3 {
+        font-size: 22px !important;
+    }
+}
